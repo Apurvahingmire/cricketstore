@@ -1,0 +1,67 @@
+<body>
+    <section id="register" class="py-5" style="background-color: rgb(250, 250, 242);">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h4 class="display-4 text-center mb-4">Register</h4>
+              <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" name="firstName" class="form-control" id="firstName" placeholder="Enter your first name"[(ngModel)]="model.firstname">
+                </div>
+
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" name="username" class="form-control" id="username" placeholder="Enter your username" [(ngModel)]="model.username">
+                </div>
+
+                <div class="mb-3">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Enter your Last name" [(ngModel)]="model.lastName">
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address" [(ngModel)]="model.email">
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <div class="input-group" name="password">
+                    <input name="PasswordHash" type="password" class="form-control" id="password" placeholder="Enter your password" [(ngModel)]="model.passwordHash">
+                    <button class="btn btn-outline-secondary" type="button" id="showPasswordBtn">Show</button>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="gender" class="form-label">Gender</label>
+                  <input name="Gender" type="number" class="form-control" id="gender" [(ngModel)]="model.gender">
+                </div>
+                <div class="mb-3">
+                  <label for="dob" class="form-label">Date of Birth</label>
+                  <input name="dob" type="date" class="form-control" id="dob" [(ngModel)]="model.dob">
+                </div>
+
+                <div class="mb-3">
+                  <label for="phoneNumber" class="form-label">Phone Number</label>
+                  <input name="phoneNumber" type="tel" class="form-control" id="phoneNo" placeholder="Enter your phone number"[(ngModel)]="model.phoneNo">
+                </div>
+
+                <div class="mb-3">
+                  <label for="address" class="form-label">Address</label>
+                  <input name="address" type="tel" class="form-control" id="address" placeholder="Enter your address"[(ngModel)]="model.address">
+                </div>
+
+                <div class="mb-3">
+                  <label for="roleId" class="form-label">Role Id</label>
+                  <input name="roleId" type="tel" class="form-control" id="roleId" placeholder="Enter your role id"[(ngModel)]="model.roleId">
+                </div>
+
+                <!-- <button type="submit" class="btn btn-primary">Register</button> -->
+                <button type="submit" class="btn btn-secondary btn-block">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>

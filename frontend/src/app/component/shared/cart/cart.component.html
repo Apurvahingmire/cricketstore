@@ -1,0 +1,60 @@
+<div *ngFor="let product of productList" class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src={{product.imageUrl}} class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text">Rs. {{product.price}}<br>Eligible for free shipping</p>
+          <p>Eligble for free shipping</p>
+          <div class="quantity">
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button (click)="onMinusProduct(product.id)">-</button> 
+            <input type="number" style="width: 45px; align-content: center;"  [(ngModel)]="product.quantity" min="1">
+             <button (click)="onAddProduct(product.id)">+</button>&nbsp;
+             </div>
+            <button type="button" class="btn btn-outline-primary"(click)="onRemoveProduct(product.id)">Remove</button><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <div class="card-footer" style="margin-left: 13%;">
+        <h4>Subtotal - Rs.{{getTotalPrice()}}</h4>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-success"[routerLink]="['/orderplaced']">Place Order</button>&nbsp;
+<button type="button"  class="btn btn-danger" (click)="onRemoveCart()">Clear Cart</button><br><br>
+  </div> 
+  
+  <!-- <div class="modal fade" id="exampleModal"  *ngFor="let product of productList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <div class="col-md-4">
+                <img src={{product.imageUrl}} style=" height: 60px; width: 60px; overflow: hidden; border-radius: 20px;" class="img-fluid rounded-start" alt="img">
+              </div>
+            <div class="col-6">
+                    <p><strong>{{product.name}}</strong></p>
+                    <p class="card-text">Rs. {{product.price}}<br>Eligible for free shipping</p>
+ 
+                  </div>
+          
+        </div>
+        <div class="modal-footer">
+            <div class="col-5">
+                <h5> Subtotal: ₹<span id="total">{{getTotalPrice()}}</span></h5>
+              </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="onRemoveCart()">Clear Cart</button>
+          <button type="button" class="btn btn-primary">Place Order</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  

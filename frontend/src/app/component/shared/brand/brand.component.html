@@ -1,0 +1,23 @@
+<section id="brand" style="background-color: rgb(250, 250, 242);">
+    <h2 class="section-title text-center mt-5 mb-4 ">Shop by Brands</h2><br>
+    <div class="row col d-flex justify-content-center">
+        <div class="col-md-3 col d-flex justify-content-center">
+            <div class="card col d-flex justify-content-center">
+                <img src="https://m.media-amazon.com/images/S/aplus-media/sota/b8dfc5a9-716f-45d7-86ed-ad74679dd3da._CR0,0,500,500_PT0_SX300__.png" class="card-img-top" alt="SG brand" height="205px;">
+                <div class="card-body">
+                    <h5 class="card-title">SG</h5>
+                    <a [routerLink]="['/brand/products',2]" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col d-flex justify-content-center">
+            <div class="card col d-flex justify-content-center">
+                <img src="data:image/png;base64,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" class="card-img-top" alt="SS brand">
+                <div class="card-body">
+                    <h5 class="card-title">SS</h5>
+                    <a [routerLink]="['/brand/products',1]" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+            </div>
+</section>

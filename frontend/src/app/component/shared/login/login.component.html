@@ -1,0 +1,46 @@
+<!-- <div class="container p-3 my-5 d-flex flex-column w-50" style="background-color: rgb(182, 182, 163);">
+    <div class="card" style="background-color: rgb(250, 250, 242);">
+        <div class="card-body">
+            <h3 class="card-title" >
+                Login
+            </h3>
+            <br>
+            <form (ngSubmit)="handleSubmit($event)">
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" [(ngModel)]="email" required>
+                  
+                </div>
+                <br>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Password" [(ngModel)="passwordHash" required>
+                </div>
+            
+                <br>
+                <-- <button type="submit" class="btn btn-success">Submit</button> -->
+                <!-- <button type="submit" class="btn btn-primary mb-4" >Login</button>
+              </form>
+              <p class="text-center">Don't have an account? <a class="nav-link" [routerLink]="['/register']">Register here!</a></p>
+        </div>
+    </div>
+</div>  -->
+
+<div class="container p-3 my-5 d-flex flex-column w-50" style="background-color: rgb(215, 211, 205);">
+  <h3 class="card-title" style="text-align: center;" >
+    Login
+</h3><br><br>
+  <form (ngSubmit)="handleSubmit($event)">
+   <div class="form-group">
+    <label for="email">Email:</label>    
+    <input class="form-control mb-4" type="email" id="email" name="email" placeholder="Email address" [(ngModel)]="email" required>
+   </div>
+   <div class="form-group">
+      <label for="password">Password:</label>    
+      <input class="form-control mb-4" type="password" id="password" name="password" placeholder="password" [(ngModel)]="passwordHash" required>
+  </div>
+  <button type="submit" class="btn btn-light mb-4">Login</button> 
+  </form>
+  <p class="text-center">Don't have an account? <a class="nav-link" [routerLink]="['/register']">Register here!</a></p>
+</div>

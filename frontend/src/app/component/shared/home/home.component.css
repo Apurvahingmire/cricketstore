@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner Slider styles */
+.slider {
+    background-color:rgb(215, 211, 205);
+   font-size: 20px;
+   text-align: center;
+}
+
+/* Deals of the Day styles */
+.deals {
+    background-color:rgb(215, 211, 205);
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 25px;
+    color:rgb(232, 231, 231);
+    text-decoration: underline;
+    text-align: left;
+    
+}
+
+
+.deals ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0%;
+   text-align: left;
+    color:beige;
+}
+
+.deals li {
+    margin: 0%;
+    padding: 0%;
+    
+    color:beige;
+}
+
+/* New Arrivals styles */
+.new-arrivals {
+    background-color: #fff;
+    padding: 0px;
+    
+}
+
+.new-arrivals h2 {
+    font-size: 24px;
+    color: #333;
+    margin-left: 1%;
+    text-decoration: underline;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 500px;
+    margin-right: 1px;
+    display: inline-block;
+    padding: 0%;
+    width: 200px;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 2%;
+    margin-left: 1%;
+    border-color: rgb(80, 61, 98);
+    
+
+
+}
+
+.product p {
+    font-size: 16px;
+    color: #444;
+}
+
+.product span {
+    font-size: 18px;
+    color: #461e1a;
+}
+.card-body{
+    text-align: left;
+    width: 2000;
+    font-size: 20px;
+    
+}
+.card{
+    margin: 0%;
+    padding: 0%;
+}

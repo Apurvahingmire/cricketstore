@@ -1,0 +1,8 @@
+.nav-item{
+    text-align: left;
+}
+
+.text-center{
+    background: linear-gradient(to right , rgb(162, 147, 124),black);
+    color: wheat;
+}

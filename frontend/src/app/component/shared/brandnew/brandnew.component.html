@@ -1,0 +1,18 @@
+<p>hii</p>
+
+<div class="product-container">
+    <div class="product-card" *ngFor="let brand of brands">
+        <a  [routerLink]="['/brand/products']">
+            <img src="https://t3.ftcdn.net/jpg/02/02/27/68/360_F_202276862_Bl20MC12CxPZAr781Sctf37otHIwSvBU.jpg"     class="myimg">
+        </a>
+       
+ 
+        <div class="contentdiv">
+        <div class="product-name">{{brand.id}}</div>
+        <div class="product-price">{{brand.name}}</div>
+        <div class="product-description">this</div>
+        <!-- <div class="product-buttons">
+            <button (click)="addToCart" class="add-to-cart">Add to Cart</button>
+            <button (click)="removeFromCart" class="remove-from-cart">Remove from Cart</button>
+        </div> -->
+      </div>

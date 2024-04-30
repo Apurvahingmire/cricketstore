@@ -1,0 +1,37 @@
+
+element.style {
+    user-select: auto;
+}
+.abt_main, .abt_container_full, .abt_container, .abt_heading_box {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.abt_50{
+    margin-left: 50%;
+   
+}
+.abt_orng{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.col-md-4{
+    height: 500%; width:700%;
+}
+
+  td {
+    padding: 10px;
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+.abt3_text1{
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.abt3_text2{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

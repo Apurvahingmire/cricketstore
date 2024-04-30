@@ -1,0 +1,33 @@
+.navbar-brand{
+    color: rgb(82, 38, 71);
+    font-size: xx-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+   
+    background: linear-gradient(to right,rgb(99, 69, 69),rgb(44, 58, 44),rgb(57, 57, 98),indigo,rgb(104, 47, 104));
+   
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+ 
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    .d-flex{
+       align-self: start; ;
+    }
+    
+    .nav .nav-search input{
+      
+      color: black;
+      border: 1px solid brown;
+      height: 40px;
+      border-right: none;
+
+    }
+    .nav .nav-search button{
+      color: black;
+      border: 1px solid brown;
+      height: 50px;
+    }

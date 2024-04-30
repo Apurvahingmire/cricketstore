@@ -1,0 +1,13 @@
+p{
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: larger;
+    font-weight: bold;
+}
+img{
+    width: 500px;
+    height: 250px;
+}
+button{
+    margin-bottom: 50px;
+}
